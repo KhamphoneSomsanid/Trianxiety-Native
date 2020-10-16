@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentClaim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.rank.Claim">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hgl_0.05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vgl_0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vgl_0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vgl_0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/txtClaimTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/str_txtClaimTop"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.9"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.1"
+        app:layout_constraintTop_toTopOf="@id/hgl_0.05" />
+
+    <TextView
+        android:id="@+id/txtClaimBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/str_txtClaimBottom"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.9"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.1"
+        app:layout_constraintTop_toBottomOf="@id/txtClaimTop" />
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/str_edtFirstName"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.9"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.1"
+        app:layout_constraintTop_toBottomOf="@id/txtClaimBottom" />
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/str_edtLastName"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.9"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.1"
+        app:layout_constraintTop_toBottomOf="@id/edtFirstName" />
+
+    <EditText
+        android:id="@+id/edtCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/str_edtCountry"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.9"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.1"
+        app:layout_constraintTop_toBottomOf="@id/edtLastName" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:onClick="onClick"
+        android:text="@string/str_btnSave"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.5"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.1"
+        app:layout_constraintTop_toBottomOf="@id/edtCountry" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="onClick"
+        android:text="@string/str_btnCancel"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.9"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.5"
+        app:layout_constraintTop_toBottomOf="@id/edtCountry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

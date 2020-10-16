@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1087504489875",
+    "firebase_url": "https://trianxiety.firebaseio.com",
+    "project_id": "trianxiety",
+    "storage_bucket": "trianxiety.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087504489875:android:2fa44b895a4f79efdddc66",
+        "android_client_info": {
+          "package_name": "com.trianxiety.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087504489875-du1naute3tab1250g5jjcm3fafuhoqj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh_65ucpLC-lxkIIcw_kz-9AZ-MjyRymI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087504489875-du1naute3tab1250g5jjcm3fafuhoqj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">Trianxiety</string>
+    <string name="str_itemNewGame">New game</string>
+    <string name="str_itemMainMenu">Main menu</string>
+    <string name="str_aldNewGame_title">Quit game</string>
+    <string name="str_aldMainMenu_title">Quit game</string>
+    <string name="str_aldNewGame_message">Are you sure that you want to quit the ongoing game and start a new game?</string>
+    <string name="str_aldMainMenu_message">Are you sure that you want to quit the ongoing game and go to the main menu?</string>
+    <string name="str_aldNewGame_positive">Yes</string>
+    <string name="str_aldMainMenu_positive">Yes</string>
+    <string name="str_aldNewGame_negative">No</string>
+    <string name="str_aldMainMenu_negative">No</string>
+    <string name="str_toastGameOver">Game over ...</string>
+    <string name="str_toastYouWon">You won!</string>
+    <string name="str_toastHistoricalGames">You\'re now viewing an historical game.\nTap NEW GAME at the top to play.</string>
+    <string name="str_toastRules">You\'re now viewing the rules.\nTap NEW GAME at the top to play. </string>
+    <string name="str_toastAlmostTimeUp">One minute left ...</string>
+    <string name="str_toastTimeUp">Time is up!</string>
+    <string name="str_btnNewGame">New game</string>
+    <string name="str_btnRank">Rank</string>
+    <string name="str_btnRules">Rules</string>
+    <string name="str_btnBack">Back</string>
+    <string name="str_btnForward">Forward</string>
+    <string name="strNoRank">No rank</string>
+    <string name="str_txtYourGames">YOUR GAMES</string>
+    <string name="str_txtAllGames">ALL GAMES</string>
+    <string name="str_aldRankRules_title">Rank Rules</string>
+    <string name="str_btnRankRules">Learn the rank rules</string>
+    <string name="str_btnClaim">Register to claim your fame</string>
+    <string name="str_btnSignIn">Sign in to claim your fame</string>
+    <string name="str_aldRankRules_positive">Got it!</string>
+    <string name="str_txtRank_your">of your games</string>
+    <string name="str_txtRank_all">of all games</string>
+    <string name="str_btnWatch_watch">Watch</string>
+    <string name="str_btnWatch_stop">Stop</string>
+    <string name="str_btnShare">Share</string>
+    <string name="str_txtMoveByMove">Move by move</string>
+    <string name="str_txtNext">Next ...</string>
+    <string name="str_txtSquares">Squares:</string>
+    <string name="str_txtMoves">Moves:</string>
+    <string name="str_txtBackToRank">Rank</string>
+    <string name="strHeadlineR0">
+        YOU\'LL START OUT WITH SOMETHING LIKE THIS
+    </string>
+    <string name="strBodyR0">
+        Eighteen squares that each consist of four triangles that each have one of six different
+        colors (red, green, blue, yellow, cyan or magenta). The nineteenth square (the one at the
+        center) will always stay all-white.
+    </string>
+    <string name="strHeadlineR1">
+        YOUR GOAL IS TO ACHIEVE THIS
+    </string>
+    <string name="strBodyR1">
+        Turn all the eighteen squares (not counting the center-square) into single-color squares in
+        the shortest amount of time. As long as you avoid triangle-crashes (explained next), the
+        order of the squares is not important.
+    </string>
+    <string name="strHeadlineR2">
+        YOU MUST AVOID TRIANGLE CRASHES
+    </string>
+    <string name="strBodyR2">
+        Two triangles of the same color must NEVER face each other like this. In other words: two
+        triangles of the same color cannot share a square-border as their common baseline. If this
+        happens, the game is lost.
+    </string>
+    <string name="strHeadlineR3">
+        SIMPLE ROTATION
+    </string>
+    <string name="strBodyR3">
+        Tap a square and release your finger. The square will then rotate in the direction of the
+        arrows. From the start of a game, the rotation direction is clockwise (as shown here).
+    </string>
+    <string name="strHeadlineR4">
+        CHANGE THE ROTATION DIRECTION
+    </string>
+    <string name="strBodyR4">
+        Tap the center-square and release your finger. The rotation direction (as shown by the
+        arrows) will then change.
+    </string>
+    <string name="strHeadlineR5">
+        DOUBLE ROTATION
+    </string>
+    <string name="strBodyR5">
+        Tap a square, drag your finger to the center-square, and release it there. The square will
+        then double-rotate. This is helpful if you cannot do two simple rotations (in either
+        direction) without causing a triangle crash.
+    </string>
+    <string name="strHeadlineR6">
+        SQUARE SWAP
+    </string>
+    <string name="strBodyR6">
+        Tap a square, drag your finger to another square, and release it there. The two squares will
+        then swap positions.
+    </string>
+    <string name="strHeadlineR7">
+        TRIANGLE SWAP
+    </string>
+    <string name="strBodyR7">
+        Tap the center-square, drag your finger to the border between two squares, and release it
+        there. The two triangles on each side of that border will then swap positions.
+    </string>
+    <string name="strHeadlineR8">
+        REGRET WHATEVER YOU\'RE ABOUT TO DO
+    </string>
+    <string name="strBodyR8">
+        If you have tapped a square but not released your finger yet: just drag it outside of the
+        entire figure and release it there. No move will then take place.
+    </string>
+    <string name="strHeadlineR9">
+        EXAMPLE GAME
+    </string>
+    <string name="strBodyR9">
+        Finally, here\'s an example of a successful game.\nPlay with only one finger. It\'s best to
+        use the thumb.\nNB: After fifty-nine minutes and fifty-nine seconds, the game is lost on time.
+    </string>
+    <string name="str_aldRankRules">
+        * The left column lists all of your games. The right column lists the top 100 of all games.
+            You can click on the individual games in the two lists to view details about them.\n
+        * Games are ranked firstly based on completed squares, secondly based on duration.\n
+        * If all the eighteen squares are completed, the game\'s duration is simply the time elapsed until the game was finished.\n
+        * If fewer than eighteen squares are completed, the game\'s duration is the time elapsed until the last completion of a square.\n
+            (When you view a game move by move or with the Watch-feature, the text-color of the timer will be yellow when showing the game\'s duration.)\n
+        * If no squares are completed, the game is not ranked.
+    </string>
+
+    <string name="str_chronometerCoverTop">Trianxiety</string>
+    <string name="str_chronometerCoverBottom">-a punitive puzzle game</string>
+
+    <string name="str_txtClaimTop">Register to claim your fame</string>
+    <string name="str_txtClaimBottom">
+        Provide your credentials in the fields below and they will show in the all-games rank.
+    </string>
+    <string name="str_aldClaimPrompt_title">Congratulations!</string>
+    <string name="str_aldClaimPrompt">
+        This game is among the top 100 games ever played by all players. Do you want to register so
+        that your name and nationality is shown in the all-games rank?
+    </string>
+    <string name="str_toastCongratulations">
+        Congratulations! This game is among the top 100 games ever played by all players.
+    </string>
+    <string name="str_toastCongratulations_1">
+        Congratulations! This is the #
+    </string>
+    <string name="str_toastCongratulations_2">
+         best game ever played by all players.
+    </string>
+    <string name="str_aldClaimPrompt_positive">Yes</string>
+    <string name="str_aldClaimPrompt_negative">No</string>
+    <string name="str_edtFirstName">First name</string>
+    <string name="str_edtLastName">Last name</string>
+    <string name="str_edtCountry">Country</string>
+    <string name="str_btnSave">Save</string>
+    <string name="str_btnCancel">Cancel</string>
+
+    <string name="app_id">ca-app-pub-1819197481638467~6840361744</string>
+    <string name="ad_id">ca-app-pub-1819197481638467/4697440757</string>
+
+    <!--
+    <string name="facebook_app_id">971459749938806</string>
+    <string name="fb_login_protocol_scheme">fb971459749938806</string>
+
+    <string name="str_txtSignIn">Sign in to claim your fame\n
+        It\'s optional, but if you sign in once,
+        your name and profile picture will be shown in the results list.</string>
+    -->
+
+</resources>

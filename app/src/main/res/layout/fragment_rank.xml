@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentRank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.rank.Rank">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hgl_0.05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hgl_0.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hgl_0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vgl_0.03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vgl_0.49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vgl_0.51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vgl_0.97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <TextView
+        android:id="@+id/txtMyGames"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/str_txtYourGames"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@id/hgl_0.05"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.49"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.03"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAllGames"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/str_txtAllGames"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@id/hgl_0.05"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.97"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.51"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rclResultsMyGames"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/hgl_0.9"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.49"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.03"
+        app:layout_constraintTop_toTopOf="@id/hgl_0.05"
+        tools:listitem="@layout/recycler_view_my_games_item" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rclResultsAllGames"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/hgl_0.9"
+        app:layout_constraintEnd_toEndOf="@id/vgl_0.97"
+        app:layout_constraintStart_toStartOf="@id/vgl_0.51"
+        app:layout_constraintTop_toTopOf="@id/hgl_0.05"
+        tools:listitem="@layout/recycler_view_all_games_item" />
+
+    <Button
+        android:id="@+id/btnRankRules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="onClick"
+        android:text="@string/str_btnRankRules"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rclResultsAllGames"
+        app:layout_constraintStart_toStartOf="@id/rclResultsMyGames"
+        app:layout_constraintTop_toTopOf="@id/hgl_0.9" />
+
+    <!--
+
+        <Button
+            android:id="@+id/btnClaim"
+            android:text="@string/str_btnClaim"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/rclResultsMyGames"
+            app:layout_constraintEnd_toEndOf="@id/rclResultsAllGames"
+            app:layout_constraintTop_toTopOf="@id/hgl_0.9"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="@id/rclResultsMyGames"
+            app:layout_constraintEnd_toEndOf="@id/rclResultsAllGames"
+            app:layout_constraintTop_toTopOf="@id/hgl_0.9"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:text="@string/str_btnSignIn"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/rclResultsMyGames"
+            app:layout_constraintEnd_toEndOf="@id/rclResultsAllGames"
+            app:layout_constraintTop_toTopOf="@id/hgl_0.9"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
